@@ -1,0 +1,20 @@
+let isLoggedIn = false;
+
+function login() {
+    const password = prompt("deniajip12:");
+    if (password === "deniajip12") { // Ganti dengan password yang aman
+        isLoggedIn = true;
+        alert("Lo admin jadi boleh");
+    } else {
+        alert("Password salah goblok!");
+    }
+}
+
+function editContent() {
+    if (isLoggedIn) {
+        // Logika untuk mengedit konten
+        alert("Anda dapat mengedit konten.");
+    } else {
+        alert("Silakan login terlebih dahulu.");
+    }
+}
